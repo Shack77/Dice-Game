@@ -1,41 +1,59 @@
-.container {
-  width: 70%;
-  margin: auto;
-  text-align: center;
-}
-
-.dice {
-  text-align: center;
-  display: inline-block;
-
-}
-
 body {
-  background-color: #2d841c;
+  margin: 0;
+  font-family: 'Indie Flower', cursive;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 h1 {
-  margin: 30px;
   font-family: 'Lobster', cursive;
-  text-shadow: 5px 0 #44462e;
-  font-size: 8rem;
-  color: #dd870e;
+  font-size: 4rem;
+  margin: 20px 0;
+  color: #fff;
+  text-shadow: 2px 2px #333;
 }
 
-p {
-  font-size: 2rem;
-  color: #c6f00d;
-  font-family: 'Indie Flower', cursive;
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 20px;
+}
+
+.dice {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.dice:hover {
+  transform: scale(1.05);
+}
+
+.dice p {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff;
 }
 
 img {
-  width: 80%;
+  width: 120px;
+  height: auto;
+  border-radius: 12px;
 }
 
 footer {
-  margin-top: 5%;
-  color: #EEEEEE;
-  text-align: center;
-  font-family: 'Indie Flower', cursive;
-
+  margin-top: 40px;
+  font-size: 1rem;
+  color: #eeeeee;
+  opacity: 0.8;
 }
