@@ -57,3 +57,21 @@ footer {
   color: #eeeeee;
   opacity: 0.8;
 }
+
+.roll-button {
+  margin-top: 30px;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  font-family: 'Lobster', cursive;
+  background-color: #ffffffcc;
+  border: none;
+  border-radius: 12px;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.roll-button:hover {
+  background-color: #fff;
+}
+
