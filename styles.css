@@ -1,13 +1,27 @@
 body {
   margin: 0;
   font-family: 'Indie Flower', cursive;
-  background: linear-gradient(to right, #4facfe, #00f2fe);
+  background: linear-gradient(to right, #fbdc00, #f78c1f);
+  background-size: 400% 400%;
+  animation: backgroundShift 5s ease infinite;
   color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+}
+
+@keyframes backgroundShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 h1 {
@@ -24,6 +38,7 @@ h1 {
   flex-wrap: wrap;
   gap: 40px;
   margin: 20px;
+  text-align: center;
 }
 
 .dice {
@@ -31,7 +46,6 @@ h1 {
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-  text-align: center;
   transition: transform 0.3s ease;
 }
 
@@ -39,23 +53,24 @@ h1 {
   transform: scale(1.05);
 }
 
-.dice p {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #fff;
+.player1 {
+  background-color: #001f3f; /* Dark navy blue */
+  font-weight: 900;
+  font-size: 2.2rem;
+  text-shadow: 2px 2px 5px #0074D9;
+}
+
+.player2 {
+  background-color: #7FDBFF; /* Light blue */
+  font-weight: 900;
+  font-size: 2.2rem;
+  text-shadow: 2px 2px 5px #ffffff;
 }
 
 img {
   width: 120px;
   height: auto;
   border-radius: 12px;
-}
-
-footer {
-  margin-top: 40px;
-  font-size: 1rem;
-  color: #eeeeee;
-  opacity: 0.8;
 }
 
 .roll-button {
@@ -75,3 +90,9 @@ footer {
   background-color: #fff;
 }
 
+footer {
+  margin-top: 40px;
+  font-size: 1rem;
+  color: #eeeeee;
+  opacity: 0.8;
+}
